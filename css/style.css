@@ -36,8 +36,9 @@ nav .menù:last-child{
 
 nav .menù:nth-child(2){
     width: 750px;
-    text-align: center;
     min-width: 290px;
+
+    text-align: center;
 }
 
 /* main of the page */
@@ -47,16 +48,19 @@ main div{
 }
 
 main div:first-child{
-    height: 520px;
-    background-color: #00008B;
     justify-content: center;
     align-items: center;
+
+    height: 520px;
+
+    background-color: #00008B;
 
 }
 
 main div .rectangle{
     height: 410px;
     width: 950px;
+
     background-color: #EE82EE;
     border: 2px black dashed;
 }
@@ -65,10 +69,12 @@ main div .rectangle{
 
 main .container{
     display: flex;
-    height: 625px;
-    background-color:#FFFFFF;
     justify-content: center;
     align-items: center;
+
+    height: 625px;
+
+    background-color:#FFFFFF;
 }
 
 main .container:nth-child(3){
@@ -78,17 +84,20 @@ main .container:nth-child(3){
 
 main .container .img, main .container .text{
     height: 520px;
+
     border: 2px black dashed;
 }
 
 main .container .img{
     width: 750px;
     max-width: 750px;
+
     background-color: #1E90FF;
 }
 
 main .container .text{
     width: 500px;
+
     background-color: #FFC0CB;
 }
 
@@ -99,17 +108,21 @@ main .container:nth-child(3) .text{
 /* div con il rettangolo grande */
 
 main .big-rectangle{
-    height: 1042px;
-    background-color: #D3D3D3;
     justify-content: center;
     align-items: center;
+
+    height: 1042px;
+
+    background-color: #D3D3D3;
 }
 
 main .big-rectangle .green-rectangle{
     display: flex;
     justify-content: center;
+
     height: 930px;
     width: 1250px;
+
     background-color:#228B22 ;
     border: 2px black dashed;
 }
@@ -117,9 +130,10 @@ main .big-rectangle .green-rectangle{
 /* griglia per informazioni */
 
 main .grid{
-    background-color:#23272A ;
     display: flex;
     justify-content: center;
+
+    background-color:#23272A ;
     border-bottom:  2px white solid;
 }
 
@@ -133,14 +147,16 @@ main .grid .box{
 main .grid .box .social{
     width: 375px;
     height: 520px;
+
     background-color: #F08080;
     border: 2px black dashed;
 }
 
 main .grid .box .information{
-    background-color:#20B2AA ;
     width: 220px;
     height: 520px;
+
+    background-color:#20B2AA ;
     border: 2px white dashed;
 }
 
@@ -148,18 +164,21 @@ main .grid .box .information{
 
 footer{
     display: flex;
-    background-color:#23272A;
     justify-content: center;
     align-content: flex-end;
+
+    background-color:#23272A;
 }
 
 footer .foot-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     width: 1250px;
     height: 80px;
     margin-top: 30px;
+
     background-color:#7FFFD4 ;
 }
 
@@ -167,9 +186,11 @@ footer .foot-container .foot-link{
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 35px;
     width: 70px;
+    padding: 5px;
+
     background-color: #FFB6C1;
     border: 2px black dashed;
-    padding: 5px;
 }
