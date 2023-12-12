@@ -23,7 +23,7 @@ nav .menù{
     flex-direction: row;
     
     background-color: #DAA520;
-    border: 1px dashed black;
+    border: 2px dashed black;
 }
 
 nav .menù:first-child, nav .menù:last-child{
@@ -58,13 +58,15 @@ main div .rectangle{
     height: 410px;
     width: 950px;
     background-color: #EE82EE;
+    border: 2px black dashed;
 }
+
+/* div centrali */
 
 main .container{
     display: flex;
     height: 625px;
     background-color:#FFFFFF;
-    border: 1px black solid;
     justify-content: center;
     align-items: center;
 }
@@ -76,7 +78,7 @@ main .container:nth-child(3){
 
 main .container .img, main .container .text{
     height: 520px;
-    border: 1px black dashed;
+    border: 2px black dashed;
 }
 
 main .container .img{
@@ -94,7 +96,80 @@ main .container:nth-child(3) .text{
     order: -1;
 }
 
+/* div con il rettangolo grande */
+
 main .big-rectangle{
     height: 1042px;
     background-color: #D3D3D3;
+    justify-content: center;
+    align-items: center;
+}
+
+main .big-rectangle .green-rectangle{
+    display: flex;
+    justify-content: center;
+    height: 930px;
+    width: 1250px;
+    background-color:#228B22 ;
+    border: 2px black dashed;
+}
+
+/* griglia per informazioni */
+
+main .grid{
+    background-color:#23272A ;
+    display: flex;
+    justify-content: center;
+    border-bottom:  2px white solid;
+}
+
+main .grid .box{
+    display: flex;
+
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+main .grid .box .social{
+    width: 375px;
+    height: 520px;
+    background-color: #F08080;
+    border: 2px black dashed;
+}
+
+main .grid .box .information{
+    background-color:#20B2AA ;
+    width: 220px;
+    height: 520px;
+    border: 2px white dashed;
+}
+
+/* footer della pagina */
+
+footer{
+    display: flex;
+    background-color:#23272A;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+footer .foot-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1250px;
+    height: 80px;
+    margin-top: 30px;
+    background-color:#7FFFD4 ;
+}
+
+footer .foot-container .foot-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 70px;
+    background-color: #FFB6C1;
+    border: 2px black dashed;
+    padding: 5px;
 }
