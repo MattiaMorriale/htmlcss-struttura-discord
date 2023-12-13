@@ -13,6 +13,17 @@ nav{
     justify-content: center;
 
     height: 80px;
+    padding: 0 40px;
+    
+    background-color:#ADD8E6;
+}
+
+nav .container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
     
     background-color:#ADD8E6;
 }
@@ -35,19 +46,20 @@ nav .menù:last-child{
 }
 
 nav .menù:nth-child(2){
-    width: 750px;
-    min-width: 290px;
+    flex-grow: 1;
 
     text-align: center;
 }
 
 /* main of the page */
 
-main div{
+main .header-box{
     display: flex;
+
+    padding: 0 40px;
 }
 
-main div:first-child{
+main .header-box:first-child{
     justify-content: center;
     align-items: center;
 
@@ -57,7 +69,7 @@ main div:first-child{
 
 }
 
-main div .rectangle{
+main .header-box .rectangle{
     height: 410px;
     width: 950px;
 
@@ -67,17 +79,29 @@ main div .rectangle{
 
 /* div centrali */
 
-main .container{
+main .central-box{
     display: flex;
     justify-content: center;
     align-items: center;
 
     height: 625px;
+    padding: 0 40px;
 
     background-color:#FFFFFF;
 }
 
-main .container:nth-child(3){
+main .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1250px;
+
+    height: 625px;
+
+}
+
+main  .central-box:nth-child(3){
     background-color: #D3D3D3;
     
 }
@@ -88,30 +112,32 @@ main .container .img, main .container .text{
     border: 2px black dashed;
 }
 
-main .container .img{
+main  .central-box .container .img{
     width: 750px;
     max-width: 750px;
 
     background-color: #1E90FF;
 }
 
-main .container .text{
-    width: 500px;
+main  .central-box .container .text{
+    flex-grow: 1;
 
     background-color: #FFC0CB;
 }
 
-main .container:nth-child(3) .text{
+main  .central-box:nth-child(3) .text{
     order: -1;
 }
 
 /* div con il rettangolo grande */
 
 main .big-rectangle{
+    display: flex;
     justify-content: center;
     align-items: center;
 
     height: 1042px;
+    padding: 0 40px;
 
     background-color: #D3D3D3;
 }
@@ -133,6 +159,8 @@ main .grid{
     display: flex;
     justify-content: center;
 
+    padding: 0 40px;
+
     background-color:#23272A ;
     border-bottom:  2px white solid;
 }
@@ -140,21 +168,23 @@ main .grid{
 main .grid .box{
     display: flex;
 
+    height: 520px;
+    width: 1255px;
+
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
 main .grid .box .social{
     width: 375px;
-    height: 520px;
 
     background-color: #F08080;
     border: 2px black dashed;
 }
 
 main .grid .box .information{
-    width: 220px;
-    height: 520px;
+    /* width: 220px; */
+    flex-grow: 1;
 
     background-color:#20B2AA ;
     border: 2px white dashed;
@@ -166,6 +196,8 @@ footer{
     display: flex;
     justify-content: center;
     align-content: flex-end;
+
+    padding: 0 40px;
 
     background-color:#23272A;
 }
@@ -180,6 +212,7 @@ footer .foot-container{
     margin-top: 30px;
 
     background-color:#7FFFD4 ;
+    border: 2px black dashed;
 }
 
 footer .foot-container .foot-link{
